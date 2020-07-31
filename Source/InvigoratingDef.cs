@@ -24,7 +24,7 @@ namespace DInterestsCallings
             Need_Rest restNeed = pawn.needs.TryGetNeed(NeedDefOf.Rest) as Need_Rest;
             if (restNeed == null)
             {
-                Log.Error("Got null rest need, wat");
+                //Log.Error("Got null rest need, wat");
                 return;
             }
 
