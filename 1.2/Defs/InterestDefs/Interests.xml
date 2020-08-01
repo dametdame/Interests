@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <DInterests.InterestDef>
+    <defName>DMinorAversion</defName>
+    <label>minor aversion</label>
+	<texPath>UI/Icons/DsnowflakeSmall</texPath>
+	<learnFactor>0.4</learnFactor>
+	<inspirationFactor>0.25</inspirationFactor>
+	<priority>40</priority>
+	<value>-15</value>
+	<weight>10.0</weight>
+	<weightLevelExponent>1.2</weightLevelExponent>
+	<weightLevelFactor>-1.0</weightLevelFactor>
+	<weightLevelOffset>0.0</weightLevelOffset>
+  </DInterests.InterestDef>
+  
+  <DInterests.InterestDef>
+    <defName>DMajorAversion</defName>
+    <label>major aversion</label>
+	<texPath>UI/Icons/DsnowflakeLarge</texPath>
+	<learnFactor>0.25</learnFactor>
+	<inspirationFactor>0.0</inspirationFactor>
+	<priority>20</priority>
+	<value>-30</value>
+	<weight>5.0</weight>
+	<weightLevelExponent>1.2</weightLevelExponent>
+	<weightLevelFactor>-1</weightLevelFactor>
+	<weightLevelOffset>0.0</weightLevelOffset>
+  </DInterests.InterestDef>
+  
+  <DInterests.InterestDef Class="DInterestsCallings.CompulsionDef">
+    <defName>DCompulsion</defName>
+    <label>compulsion</label>
+	<texPath>UI/Icons/DdiceRedWhite</texPath>
+	<maxPerPawn>1</maxPerPawn>
+	<learnFactor>1.6</learnFactor>
+	<inspirationFactor>8.0</inspirationFactor>
+	<priority>1000</priority>
+	<value>150</value>
+	<weight>1.0</weight>
+	<weightLevelExponent>1.0</weightLevelExponent>
+	<weightLevelFactor>0.0</weightLevelFactor>
+	<weightLevelOffset>1.0</weightLevelOffset>
+	<ineligibleSkills>
+		<li>Shooting</li>
+		<li>Melee</li>
+		<li>Social</li>
+		<li>Plants</li>
+		<li>Animals</li>
+		<li>Medicine</li>
+	</ineligibleSkills>
+  </DInterests.InterestDef>
+  
+   <DInterests.InterestDef Class="DInterestsCallings.InvigoratingDef">
+    <defName>DInvigorating</defName>
+    <label>invigorating</label>
+	<texPath>UI/Icons/Dcoffeecup</texPath>
+	<learnFactor>0.40</learnFactor>
+	<inspirationFactor>1.0</inspirationFactor>
+	<priority>50</priority>
+	<value>120</value>
+	<weight>3.0</weight>
+	<weightLevelExponent>1.0</weightLevelExponent>
+	<weightLevelFactor>0.0</weightLevelFactor>
+	<weightLevelOffset>2.0</weightLevelOffset>
+	<ineligibleSkills>
+		<li>Shooting</li>
+		<li>Melee</li>
+		<li>Social</li>
+		<li>Intellectual</li>
+	</ineligibleSkills>
+	<handlesTicks>true</handlesTicks>
+  </DInterests.InterestDef>
+  
+  <DInterests.InterestDef>
+    <defName>DInspiring</defName>
+    <label>inspiring</label>
+	<texPath>UI/Icons/Dinspired</texPath>
+	<maxPerPawn>1</maxPerPawn>
+	<learnFactor>0.6</learnFactor>
+	<inspirationFactor>200.0</inspirationFactor>
+	<priority>155</priority>
+	<value>100</value>
+	<weight>-10</weight>
+	<weightLevelExponent>1.3</weightLevelExponent>
+	<weightLevelFactor>1.0</weightLevelFactor>
+	<weightLevelOffset>1.0</weightLevelOffset>
+	<inspires>true</inspires>
+	<inspirationMoodThreshold>0.4</inspirationMoodThreshold>
+	<inspirationChanceMultiplier>10.0</inspirationChanceMultiplier>
+	<ineligibleSkills>
+		<li>Melee</li>
+		<li>Mining</li>
+		<li>Plants</li>
+		<li>Cooking</li>
+		<li>Intellectual</li>
+	</ineligibleSkills>
+  </DInterests.InterestDef>
+  
+  <DInterests.InterestDef>
+    <defName>DStagnant</defName>
+    <label>stagnant</label>
+	<texPath>UI/Icons/Dlock</texPath>
+	<learnFactor>0.0</learnFactor>
+	<forgetFactor>0.0</forgetFactor>
+	<inspirationFactor>0.0</inspirationFactor>
+	<priority>-50</priority>
+	<value>-200</value>
+	<weight>-10</weight>
+	<weightLevelExponent>1.3</weightLevelExponent>
+	<weightLevelFactor>1.0</weightLevelFactor>
+	<weightLevelOffset>1.0</weightLevelOffset>
+  </DInterests.InterestDef>
+  
+  <DInterests.InterestDef>
+    <defName>DForgetful</defName>
+    <label>forgetful</label>
+	<texPath>UI/Icons/DthoughtCloud</texPath>
+	<learnFactor>1.8</learnFactor>
+	<forgetFactor>2.0</forgetFactor>
+	<inspirationFactor>1.0</inspirationFactor>
+	<priority>30</priority>
+	<value>77</value>
+	<weight>-160</weight>
+	<weightLevelExponent>1.2</weightLevelExponent>
+	<weightLevelFactor>-5.0</weightLevelFactor>
+	<weightLevelOffset>20.0</weightLevelOffset>
+  </DInterests.InterestDef>
+  
+   <DInterests.InterestDef Class="DInterestsCallings.JoyGivingDef">
+    <defName>DVocalHatred</defName>
+    <label>vocal hatred</label>
+	<texPath>UI/Icons/Dmegaphone</texPath>
+	<maxPerPawn>1</maxPerPawn>
+	<mapwideWorkImpacter>true</mapwideWorkImpacter>
+	<visibleJoyFactorForSkill>-0.0020</visibleJoyFactorForSkill>
+	<learnFactor>1.0</learnFactor>
+	<inspirationFactor>0.0</inspirationFactor>
+	<priority>-100</priority>
+	<value>-300</value>
+	<weight>1.0</weight>
+	<weightLevelExponent>1.0</weightLevelExponent>
+	<weightLevelFactor>0.0</weightLevelFactor>
+	<weightLevelOffset>0.75</weightLevelOffset>
+	<ineligibleSkills>
+		<li>Shooting</li>
+		<li>Melee</li>
+		<li>Social</li>
+	</ineligibleSkills>
+  </DInterests.InterestDef>
+  
+  <DInterests.InterestDef Class="DInterestsCallings.NaturalGeniusDef">
+    <defName>DNaturalGenius</defName>
+    <label>natural genius</label>
+	<texPath>UI/Icons/Dbrain</texPath>
+	<maxPerPawn>1</maxPerPawn>
+	<mapwideWorkImpacter>true</mapwideWorkImpacter>
+	<learnFactor>1.0</learnFactor>
+	<inspirationFactor>1000</inspirationFactor>
+	<priority>300</priority>
+	<value>300</value>
+	<weight>1.0</weight>
+	<weightLevelExponent>1.0</weightLevelExponent>
+	<weightLevelFactor>0.0</weightLevelFactor>
+	<weightLevelOffset>0.75</weightLevelOffset>
+	<inspires>true</inspires>
+	<inspirationMoodThreshold>0.3</inspirationMoodThreshold>
+	<inspirationChanceMultiplier>3.0</inspirationChanceMultiplier>
+	<ineligibleSkills>
+		<li>Intellectual</li>
+	</ineligibleSkills>
+	<handlesTicks>true</handlesTicks>
+  </DInterests.InterestDef>
+  
+  <DInterests.InterestDef Class="DInterestsCallings.BoredDef">
+    <defName>DBored</defName>
+    <label>bored</label>
+	<texPath>UI/Icons/Dzzz</texPath>
+	<maxPerPawn>1</maxPerPawn>
+	<learnFactor>1.1</learnFactor>
+	<inspirationFactor>0.0</inspirationFactor>
+	<priority>11</priority>
+	<value>-5</value>
+	<weight>0.0</weight>
+	<weightLevelExponent>1.3</weightLevelExponent>
+	<weightLevelFactor>1.0</weightLevelFactor>
+	<weightLevelOffset>1.0</weightLevelOffset>
+	<ineligibleSkills>
+		<li>Shooting</li>
+		<li>Melee</li>
+		<li>Social</li>
+	</ineligibleSkills>
+	<handlesTicks>true</handlesTicks>
+  </DInterests.InterestDef>
+  
+  <DInterests.InterestDef>
+    <defName>DAllergic</defName>
+    <label>allergic</label>
+	<texPath>UI/Icons/Dtissuebox</texPath>
+	<learnFactor>1.25</learnFactor>
+	<inspirationFactor>1.0</inspirationFactor>
+	<priority>66</priority>
+	<value>-15</value>
+	<weight>3</weight>
+	<weightLevelExponent>1.1</weightLevelExponent>
+	<weightLevelFactor>-1.0</weightLevelFactor>
+	<weightLevelOffset>1.0</weightLevelOffset>
+	<ineligibleSkills>
+		<li>Shooting</li>
+		<li>Melee</li>
+		<li>Social</li>
+		<li>Artistic</li>
+	</ineligibleSkills>
+  </DInterests.InterestDef>
+  
+</Defs>

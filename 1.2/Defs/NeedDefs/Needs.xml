@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ <NeedDef>
+    <defName>DCompulsionNeed</defName>
+    <needClass>DInterestsCallings.Need_Compulsion</needClass>
+    <label>Compulsion</label>
+    <description>Compulsion represents the need to perform a specific skill. When below a certain threshold, it will generate a negative mood.</description>
+    <minIntelligence>Humanlike</minIntelligence>
+    <colonistAndPrisonersOnly>true</colonistAndPrisonersOnly>
+	<neverOnPrisoner>true</neverOnPrisoner>
+    <listPriority>125</listPriority>
+    <freezeWhileSleeping>false</freezeWhileSleeping>
+    <fallPerDay>0.6</fallPerDay>
+  </NeedDef>
+
+</Defs>

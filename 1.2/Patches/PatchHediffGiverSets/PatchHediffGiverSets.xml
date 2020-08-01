@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/HediffGiverSetDef[defName="Human"]/hediffGivers</xpath>
+		<value>
+			<li Class="DInterestsCallings.HediffGiver_Allergic">
+				<hediff>DAllergicReaction</hediff>
+			</li>
+		</value>
+	</Operation>
+</Patch>

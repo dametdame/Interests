@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThoughtDef>
+    <defName>DoingInterestingWork</defName>
+    <workerClass>DInterestsCallings.ThoughtWorker_InterestingWork</workerClass>
+    <stages>
+      <li>
+        <label>minor aversion to my work</label>
+        <description>I don't like my work.</description>
+        <baseMoodEffect>-8</baseMoodEffect>
+      </li>
+      <li>
+        <label>major aversion to my work</label>
+        <description>I hate my work. I wish I was doing literally anything else.</description>
+        <baseMoodEffect>-14</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+
+<ThoughtDef>
+    <defName>CompulsionUnmet</defName>
+    <workerClass>DInterestsCallings.ThoughtWorker_CompulsionUnmet</workerClass>
+	<nullifyingTraits>
+      <li>Neurotic</li>
+    </nullifyingTraits>
+    <stages>
+	  <li>
+        <label>compulsive itch</label>
+        <description>I miss doing my compulsion.</description>
+        <baseMoodEffect>-2</baseMoodEffect>
+      </li>
+	  <li>
+        <label>compulsive need</label>
+        <description>I can't stop thinking about my compulsion.</description>
+        <baseMoodEffect>-4</baseMoodEffect>
+      </li>
+	  <li>
+        <label>compulsive obsession</label>
+        <description>I'm obsessed with my compulsion.</description>
+        <baseMoodEffect>-6</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+<ThoughtDef>
+    <defName>NeuroticCompulsionUnmet</defName>
+    <workerClass>DInterestsCallings.ThoughtWorker_CompulsionUnmet</workerClass>
+	<requiredTraits>
+      <li>Neurotic</li>
+    </requiredTraits>
+	<requiredTraitsDegree>1</requiredTraitsDegree>
+    <stages>
+	  <li>
+        <label>compulsive itch</label>
+        <description>My compulsion is always on my mind.</description>
+        <baseMoodEffect>-3</baseMoodEffect>
+      </li>
+	  <li>
+        <label>compulsive demand</label>
+        <description>Shouldn't I be doing my compulsion instead?</description>
+        <baseMoodEffect>-6</baseMoodEffect>
+      </li>
+	  <li>
+        <label>compulsive withdrawal</label>
+        <description>Nothing but my compulsion matters...</description>
+        <baseMoodEffect>-9</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+
+<ThoughtDef>
+    <defName>VeryNeuroticCompulsionUnmet</defName>
+    <workerClass>DInterestsCallings.ThoughtWorker_CompulsionUnmet</workerClass>
+	<requiredTraits>
+      <li>Neurotic</li>
+    </requiredTraits>
+	<requiredTraitsDegree>2</requiredTraitsDegree>
+    <stages>
+	  <li>
+        <label>compulsive yearning</label>
+        <description>I should be doing my compulsion.</description>
+        <baseMoodEffect>-4</baseMoodEffect>
+      </li>
+	  <li>
+        <label>compulsive tantrum</label>
+        <description>I need to do my compulsion now!</description>
+        <baseMoodEffect>-8</baseMoodEffect>
+      </li>
+	  <li>
+        <label>compulsive hysteria</label>
+        <description>My compulsion is my entire world.</description>
+        <baseMoodEffect>-12</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+</Defs>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<Operation Class="PatchOperationAttributeRemove">
+	<xpath>Defs/DInterests.InterestDef[defName = "DMinorPassion"]</xpath>
+	<attribute>Class</attribute>
+</Operation>
+
+<!-- Learn Factor -->
+
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/DInterests.InterestDef[defName = "DNoPassion"]/learnFactor</xpath>
+	<value>
+		<learnFactor>0.5</learnFactor>
+	</value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/DInterests.InterestDef[defName = "DMinorPassion"]/learnFactor</xpath>
+	<value>
+		<learnFactor>0.9</learnFactor>
+	</value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/DInterests.InterestDef[defName = "DMajorPassion"]/learnFactor</xpath>
+	<value>
+		<learnFactor>1.25</learnFactor>
+	</value>
+</Operation>
+
+
+<!-- Value -->
+
+
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/DInterests.InterestDef[defName = "DMinorPassion"]/value</xpath>
+	<value>
+		<value>76</value>
+	</value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/DInterests.InterestDef[defName = "DMajorPassion"]/value</xpath>
+	<value>
+		<value>101</value>
+	</value>
+</Operation>
+
+
+<!-- Weight -->
+
+
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/DInterests.InterestDef[defName = "DNoPassion"]/weight</xpath>
+	<value>
+		<weight>50.0</weight>
+	</value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/DInterests.InterestDef[defName = "DMinorPassion"]/weight</xpath>
+	<value>
+		<weight>1.0</weight>
+	</value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/DInterests.InterestDef[defName = "DMajorPassion"]/weight</xpath>
+	<value>
+		<weight>-2.0</weight>
+	</value>
+</Operation>
+
+<!-- Weight Level Exponent -->
+
+
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/DInterests.InterestDef[defName = "DNoPassion"]/weightLevelExponent</xpath>
+	<value>
+		<weightLevelExponent>1.0</weightLevelExponent>
+	</value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/DInterests.InterestDef[defName = "DMinorPassion"]/weightLevelExponent</xpath>
+	<value>
+		<weightLevelExponent>1.0</weightLevelExponent>
+	</value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/DInterests.InterestDef[defName = "DMajorPassion"]/weightLevelExponent</xpath>
+	<value>
+		<weightLevelExponent>1.3</weightLevelExponent>
+	</value>
+</Operation>
+
+<!-- Weight Level Factor -->
+
+
+
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/DInterests.InterestDef[defName = "DNoPassion"]/weightLevelFactor</xpath>
+	<value>
+		<weightLevelFactor>-1.0</weightLevelFactor>
+	</value>
+</Operation>
+
+
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/DInterests.InterestDef[defName = "DMinorPassion"]/weightLevelFactor</xpath>
+	<value>
+		<weightLevelFactor>0.0</weightLevelFactor>
+	</value>
+</Operation>
+
+
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/DInterests.InterestDef[defName = "DMajorPassion"]/weightLevelFactor</xpath>
+	<value>
+		<weightLevelFactor>1.0</weightLevelFactor>
+	</value>
+</Operation>
+
+
+<!-- Weight Level Offset -->
+
+
+
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/DInterests.InterestDef[defName = "DNoPassion"]/weightLevelOffset</xpath>
+	<value>
+		<weightLevelOffset>-4</weightLevelOffset>
+	</value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/DInterests.InterestDef[defName = "DMinorPassion"]/weightLevelOffset</xpath>
+	<value>
+		<weightLevelOffset>3.0</weightLevelOffset>
+	</value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/DInterests.InterestDef[defName = "DMajorPassion"]/weightLevelOffset</xpath>
+	<value>
+		<weightLevelOffset>1.0</weightLevelOffset>
+	</value>
+</Operation>
+
+</Patch>
